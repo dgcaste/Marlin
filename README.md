@@ -1,29 +1,29 @@
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
-## Marlin 1.1
-
-Marlin 1.1 represents an evolutionary leap over Marlin 1.0.2. It is the result of over two years of effort by several volunteers around the world who have paid meticulous and sometimes obsessive attention to every detail. For this release we focused on code quality, performance, stability, and overall user experience. Several new features have also been added, many of which require no extra hardware.
-
-For complete Marlin documentation click over to the [Marlin Homepage <marlinfw.org>](http://marlinfw.org/), where you will find in-depth articles, how-to videos, and tutorials on every aspect of Marlin, as the site develops. For release notes, see the [Releases](https://github.com/MarlinFirmware/Marlin/releases) page.
+## Marlin 1.1.x
 
 The 1.1.x branch is home to all tagged releases of Marlin 1.1 (final version 1.1.9 – August 2018).
 
-This branch will receive no further updates. All future development —including all bug fixes— will take place in the [`bugfix-2.0.x`](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) branch, which will also serve as the root for all future Marlin development. Be sure to test [`bugfix-2.0.x`](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) before reporting any bugs you find in 1.1.9.
+Marlin 1.1.9 is the final release of the 8-bit flat version of Marlin Firmware. A monumental amount of talent and effort has gone into its production, and thanks are due to many people around the world. Throughout Marlin 1.1 development we worked closely with the community, contributors, vendors, host developers, library developers, etc. to improve the quality, configurability, and compatibility of Marlin Firmware, all while continuing to support a wide variety of Arduino-based boards. For this release we focused on code quality, performance, stability, and overall user experience. Several new features have also been added, many of which require no extra hardware.
 
-Marlin 1.1.9 is the final release of the 8-bit flat version of Marlin Firmware. A monumental amount of talent and effort has gone into its production, and thanks are due to many people around the world. Throughout Marlin 1.1 development we worked closely with the community, contributors, vendors, host developers, library developers, etc. to improve the quality, configurability, and compatibility of Marlin Firmware, all while continuing to support a wide variety of Arduino-based boards.
+For complete Marlin documentation click over to the [Marlin Homepage <marlinfw.org>](http://marlinfw.org/), where you will find in-depth articles, how-to videos, and tutorials on every aspect of Marlin, as the site develops. For release notes, see the [Releases](https://github.com/MarlinFirmware/Marlin/releases) page.
 
 ## Marlin 1.0.x
 
 Previous releases of Marlin include [1.0.2-2](https://github.com/MarlinFirmware/Marlin/tree/1.0.2-2) (December 2016) and [1.0.1](https://github.com/MarlinFirmware/Marlin/tree/1.0.1) (December 2014). Any version of Marlin prior to 1.0.1 (when we started tagging versions) can be collectively referred to as Marlin 1.0.0.
 
+## Marlin 1.x end-of-life
+
+The 1.x branches will receive no further updates (although `bugfix-1.1.x` may include patches for any critical bugs we discover). All future development will be done in [`bugfix-2.0.x`](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x), which will also serve as the root for all future Marlin development. Be sure to test [`bugfix-2.0.x`](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) before reporting any bugs you find in 1.1.9.
+
 ## Contributing to Marlin
 
 Click on the [Issue Queue](https://github.com/MarlinFirmware/Marlin/issues) and [Pull Requests](https://github.com/MarlinFirmware/Marlin/pulls) links above at any time to see what we're currently working on.
 
-To submit patches and new features for Marlin 1.1 check out the [bugfix-1.1.x](https://github.com/MarlinFirmware/Marlin/tree/bugfix-1.1.x) branch, add your commits, and submit a Pull Request back to the `bugfix-1.1.x` branch. Periodically that branch will form the basis for the next minor release.
+To submit patches and new features for Marlin 2.0 check out the [bugfix-2.0.x](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) branch, add your commits, and submit a Pull Request back to the `bugfix-2.0.x` branch. Once 2.0.x has been certified for a critical mass of common 32-bit boards, it will become the next major release and will be the basis for all future major and minor releases.
 
-Note that our "bugfix" branch will always contain the latest patches to the current release version. These patches may not be widely tested. As always, when using "nightly" builds of Marlin, proceed with full caution.
+Note that our "bugfix" branches always contain the latest patches and new code. These patches may not be widely tested. As always, when using "nightly" builds of Marlin, proceed with full caution.
 
 ## Current Status: In Development
 
@@ -42,8 +42,16 @@ Arduino IDE now has support for folder hierarchies, so Marlin 1.2 will have a [h
 
 - [Marlin Home Page](http://marlinfw.org/) - The Marlin Documentation Project. Join us!
 - [RepRap.org Wiki Page](http://reprap.org/wiki/Marlin) - An overview of Marlin and its role in RepRap.
-- [Marlin Firmware Forum](http://forums.reprap.org/list.php?415) - Find help with configuration, get up and running.
 - [@MarlinFirmware](https://twitter.com/MarlinFirmware) on Twitter - Follow for news, release alerts, and tips & tricks. (Maintained by [@thinkyhead](https://github.com/thinkyhead).)
+
+## Marlin User Support
+
+Looking for help? The Issue Queue is for development-related issues, feature requests, and bug reports. But there are several places where you can get help from other experienced users:
+
+- [RepRap.org Marlin Forum](http://forums.reprap.org/list.php?415)
+- ["Marlin Firmware" Facebook Group](https://www.facebook.com/groups/1049718498464482/)
+- [Tom's 3D Forums](https://discuss.toms3d.org/)
+- [Marlin on Discord](https://discord.gg/n5NJ59y)
 
 ## Credits
 
@@ -58,11 +66,14 @@ Notable contributors include:
  - Bernhard Kubicek [[@bkubicek](https://github.com/bkubicek)]
  - Bob Cousins [[@bobc](https://github.com/bobc)]
  - Chris Palmer [[@nophead](https://github.com/nophead)]
+ - Chris Pepper [[@p3p](https://github.com/p3p)]
  - David Braam [[@daid](https://github.com/daid)]
+ - Éduardo Tagle [[@ejtagle](https://github.com/ejtagle)]
  - Edward Patel [[@epatel](https://github.com/epatel)]
  - Erik van der Zalm [[@ErikZalm](https://github.com/ErikZalm)]
  - Ernesto Martinez [[@emartinez167](https://github.com/emartinez167)]
  - F. Malpartida [[@fmalpartida](https://github.com/fmalpartida)]
+ - Giuliano Zaro [[@GMagician](https://github.com/GMagician)]
  - Jochen Groppe [[@CONSULitAS](https://github.com/CONSULitAS)]
  - João Brazio [[@jbrazio](https://github.com/jbrazio)]
  - Kai [[@Kaibob2](https://github.com/Kaibob2)]
@@ -74,7 +85,6 @@ Notable contributors include:
  - [[@android444](https://github.com/android444)]
  - [[@benlye](https://github.com/benlye)]
  - [[@bgort](https://github.com/bgort)]
- - [[@ejtagle](https://github.com/ejtagle)]
  - [[@Grogyan](https://github.com/Grogyan)]
  - [[@marcio-ao](https://github.com/marcio-ao)]
  - [[@maverikou](https://github.com/maverikou)]
